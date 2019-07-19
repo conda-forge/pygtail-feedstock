@@ -1,13 +1,13 @@
 {% set name = "pygtail" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/48/a7/701449e12c84846c9047a3ae77276f9c03a586e1da94490f40b0150ef449/pygtail-0.10.1.tar.gz
-  md5: 3cea557a4eb4e447f92f1ed650102d1a
+  url: https://files.pythonhosted.org/packages/14/e9/9453197f05346ae80b68ecc321ff553b59365881a61502c5001e6c6f9e6f/pygtail-0.11.0.tar.gz
+  md5: 7c6edad774bf221ec6b5e22804d55b58
 
 build:
   skip: True  # [win]
