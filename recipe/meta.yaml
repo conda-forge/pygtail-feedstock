@@ -26,6 +26,8 @@ requirements:
 test:
   commands:
     - pygtail -h
+  imports:
+    - pygtail
 
 about:
     home: https://github.com/bgreenlee/pygtail
@@ -37,3 +39,5 @@ about:
 extra:
     recipe-maintainers:
         - tsenapathi
+        - ChrisBarker-NOAA
+
