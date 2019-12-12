@@ -1,16 +1,18 @@
 {% set name = "pygtail" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
+{% set sha = "3af0825e7a5bb30af1798ed0a3d14f9a1cd7aa21b0e3f4430780f3ee3a09f3d7" %}
+
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/14/e9/9453197f05346ae80b68ecc321ff553b59365881a61502c5001e6c6f9e6f/pygtail-0.11.0.tar.gz
-  md5: 7c6edad774bf221ec6b5e22804d55b58
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha }}
 
 build:
-  skip: True  # [win]
+  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -24,6 +26,8 @@ requirements:
 test:
   commands:
     - pygtail -h
+  imports:
+    - pygtail
 
 about:
     home: https://github.com/bgreenlee/pygtail
@@ -35,3 +39,4 @@ about:
 extra:
     recipe-maintainers:
         - tsenapathi
+        - ChrisBarker-NOAA
