@@ -1,6 +1,6 @@
 {% set name = "pygtail" %}
-{% set version = "0.12.0" %}
-{% set sha = "2acf2089f808cd0c3a23ad1b50059d46ee957f773a05080559a6451495437f2e" %}
+{% set version = "0.13.0" %}
+{% set sha = "c6213ff3dfd0ca95170fb825242c3d535c8f0c59a138c76062a6ef0e5aab4166" %}
 
 
 package:
