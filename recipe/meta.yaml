@@ -19,6 +19,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - setuptools
     - pip
   run:
     - python >={{ python_min }}
@@ -33,7 +34,7 @@ test:
 
 about:
   home: https://github.com/bgreenlee/pygtail
-  license: GPL-2
+  license: GPL-2.0-only
   license_family: GPL
   license_file: LICENSE
   summary: A python 'port' of logcheck’s logtail2
